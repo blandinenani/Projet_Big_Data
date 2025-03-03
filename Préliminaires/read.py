@@ -2,7 +2,7 @@ import gzip
 import xml.etree.ElementTree as ET
 
 # Fichier Discogs publié au 1er mars 2025
-file_path = "discogs_20250301_releases.xml.gz"
+file_path = "../../discogs_20250301_releases.xml.gz"
 
 with gzip.open(file_path, 'rb') as f:
     context = ET.iterparse(f, events=("start", "end"))
